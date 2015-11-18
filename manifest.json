@@ -3,7 +3,7 @@
 
   "name": "Tripidee",
   "description": "This extension allows you to quickly add to your Tripidee trips.",
-  "version": "1.6.3",
+  "version": "1.6.5",
   "icons": {
     "16": "icon-16x16.png",
     "48": "icon-48x48.png",
@@ -12,10 +12,13 @@
   "author": "Tripidee",
   "browser_action": {
     "default_icon": "icon-16x16.png",
-    "default_popup": "popup.html"
+    "default_title": "Add to Tripidee"
   },
   "permissions": [
-    "activeTab",
-    "tabs"
-  ]
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
 }
